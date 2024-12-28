@@ -365,6 +365,11 @@ print_version(void *data __unused)
 		len--;
 	printf("%.*s %s\n", len, version, machine);
 	printf("%s\n", compiler_version);
+	printf("#############################################\n"\
+		   "#############################################\n"\
+	       "###   THIS IS THE CUSTOM OPNSENSE BUILD   ###\n"\
+		   "#############################################\n"\
+		   "#############################################\n");
 }
 
 SYSINIT(announce, SI_SUB_COPYRIGHT, SI_ORDER_FIRST, print_caddr_t,
